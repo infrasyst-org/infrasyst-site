@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Infrasyst — AWS Cloud, Automation, and Backend API builder." />
-  <title>Infrasyst | AWS Cloud • Automation • Backend APIs</title>
+  <meta name="description" content="InfraSyst — AWS Cloud, Automation, and Backend API builder." />
+  <title>InfraSyst | AWS Cloud • Automation • Backend APIs</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
     <div class="container header__inner">
       <a class="brand" href="#">
         <span class="brand__mark" aria-hidden="true">◆</span>
-        <span class="brand__name">Infrasyst</span>
+        <span class="brand__name">InfraSyst</span>
       </a>
 
       <nav class="nav" aria-label="Primary">
@@ -53,11 +53,15 @@
 
           <p class="sub">
             I help teams and founders design, automate, and run AWS infrastructure and backend APIs.
-            Clean architecture, security-minded defaults, and boring reliability (the best kind).
+            Security-minded defaults, clear documentation, and boring reliability (the best kind).
+          </p>
+
+          <p class="note">
+            Automation-first delivery — including IaC where appropriate.
           </p>
 
           <div class="cta">
-            <a class="btn" href="#contact">Let’s talk</a>
+            <a class="btn" href="#contact">Email me</a>
             <a class="btn btn--ghost" href="#services">See services</a>
           </div>
 
@@ -67,8 +71,8 @@
               <span class="trust__label">Cloud engineering</span>
             </div>
             <div class="trust__item">
-              <span class="trust__kpi">IaC</span>
-              <span class="trust__label">Automation-first</span>
+              <span class="trust__kpi">CI/CD</span>
+              <span class="trust__label">Automation & pipelines</span>
             </div>
             <div class="trust__item">
               <span class="trust__kpi">APIs</span>
@@ -91,8 +95,8 @@ $ aws sts get-caller-identity
 Account: ************
 Region:  us-east-1
 
-$ terraform apply
-Plan: 12 to add, 0 to change, 0 to destroy
+$ pipeline run
+Build: ✅  Test: ✅  Deploy: ✅
 
 $ curl -s https://api.example.com/health
 {"status":"ok","ts":"UTC"}
@@ -118,33 +122,33 @@ $ curl -s https://api.example.com/health
       <div class="container">
         <div class="section__head">
           <h2>Services</h2>
-          <p>Pick a focused engagement or bundle them into a project.</p>
+          <p>Focused engagements that reduce risk and speed up delivery.</p>
         </div>
 
         <div class="cards">
           <article class="sCard">
             <h3>AWS Cloud Engineering</h3>
-            <p>Design and harden AWS infrastructure with clear guardrails: networking, IAM, compute, storage, and CI/CD.</p>
+            <p>Design and improve AWS infrastructure with practical security and clean architecture.</p>
             <ul>
               <li>VPC + IAM architecture</li>
               <li>Lambda / ECS / EKS support</li>
-              <li>Security baselines</li>
+              <li>Security baselines & reviews</li>
             </ul>
           </article>
 
           <article class="sCard">
             <h3>Automation</h3>
-            <p>Eliminate manual ops with Infrastructure as Code (IaC) and repeatable runbooks.</p>
+            <p>Reduce manual ops with pipelines and repeatable deployments. IaC when it makes sense.</p>
             <ul>
-              <li>Terraform / CloudFormation</li>
-              <li>GitHub Actions pipelines</li>
+              <li>CI/CD pipelines (GitHub Actions, etc.)</li>
               <li>Deployments & rollbacks</li>
+              <li>IaC as needed (CloudFormation/Terraform)</li>
             </ul>
           </article>
 
           <article class="sCard">
             <h3>Backend APIs</h3>
-            <p>Build clean, maintainable APIs with authentication, rate limiting, and monitoring baked in.</p>
+            <p>Build maintainable APIs with auth, rate limiting, and monitoring baked in.</p>
             <ul>
               <li>API Gateway + Lambda</li>
               <li>DynamoDB / RDS patterns</li>
@@ -159,7 +163,7 @@ $ curl -s https://api.example.com/health
       <div class="container">
         <div class="section__head">
           <h2>How I work</h2>
-          <p>Simple process. No mystery sauce, just systems.</p>
+          <p>Simple process. No mystery sauce — just systems.</p>
         </div>
 
         <div class="steps">
@@ -176,7 +180,7 @@ $ curl -s https://api.example.com/health
           <div class="step">
             <span class="step__n">03</span>
             <h3>Build + automate</h3>
-            <p>Ship improvements with IaC, tests, and repeatable deploys.</p>
+            <p>Ship improvements with pipelines, testing, and repeatable deploys.</p>
           </div>
           <div class="step">
             <span class="step__n">04</span>
@@ -189,17 +193,17 @@ $ curl -s https://api.example.com/health
 
     <section class="section" id="contact">
       <div class="container">
-        <div class="contact">
+        <div class="contact contact--simple">
           <div>
             <h2>Contact</h2>
             <p class="sub">
-              Send a short note with what you’re building and what you need. I’ll reply with next steps.
+              Email me with what you’re building and what you need. I’ll reply with next steps.
             </p>
 
             <div class="contact__meta">
               <div class="meta">
                 <span class="meta__k">Email</span>
-                <a class="meta__v" href="mailto:hello@infrasyst.com">hello@infrasyst.com</a>
+                <a class="meta__v" href="mailto:info@infrasyst.com">info@infrasyst.com</a>
               </div>
               <div class="meta">
                 <span class="meta__k">Timezone</span>
@@ -208,25 +212,10 @@ $ curl -s https://api.example.com/health
             </div>
           </div>
 
-          <form class="form" id="contactForm">
-            <label>
-              <span>Name</span>
-              <input required name="name" type="text" placeholder="Your name" />
-            </label>
-
-            <label>
-              <span>Email</span>
-              <input required name="email" type="email" placeholder="you@company.com" />
-            </label>
-
-            <label>
-              <span>Message</span>
-              <textarea required name="message" rows="5" placeholder="What are you trying to build or fix?"></textarea>
-            </label>
-
-            <button class="btn" type="submit">Prepare email</button>
-            <p class="fineprint">This form opens your email client (no backend needed).</p>
-          </form>
+          <div class="contact__action">
+            <button class="btn" id="emailBtn" type="button">Email info@infrasyst.com</button>
+            <p class="fineprint">Opens your email client with a prefilled message (no backend form).</p>
+          </div>
         </div>
       </div>
     </section>
@@ -234,7 +223,7 @@ $ curl -s https://api.example.com/health
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span id="year"></span> Infrasyst</span>
+      <span>© <span id="year"></span> by InfraSyst Technology Solutions LLC. All rights reserved.</span>
       <span class="footer__sep">•</span>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>

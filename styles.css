@@ -1,12 +1,9 @@
 :root{
   --bg:#0b0f18;
-  --panel: rgba(255,255,255,.06);
-  --panel2: rgba(255,255,255,.08);
   --text:#e9edf6;
   --muted: rgba(233,237,246,.72);
   --line: rgba(255,255,255,.12);
   --shadow: 0 18px 60px rgba(0,0,0,.45);
-  --r: 20px;
 }
 
 *{ box-sizing:border-box; }
@@ -97,6 +94,7 @@ a{ color:inherit; text-decoration:none; }
   background: rgba(255,255,255,.10);
   box-shadow: 0 12px 30px rgba(0,0,0,.25);
   font-weight:600;
+  cursor:pointer;
 }
 .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.14); }
 .btn--ghost{ background: transparent; box-shadow:none; }
@@ -141,6 +139,12 @@ h1{
   color:var(--muted);
   font-size: 16.5px;
   max-width: 58ch;
+}
+.note{
+  margin: 0 0 16px 0;
+  color: rgba(233,237,246,.78);
+  border-left: 3px solid rgba(0,214,255,.45);
+  padding-left: 12px;
 }
 .cta{ display:flex; gap:12px; flex-wrap:wrap; margin-top: 16px; }
 
@@ -273,13 +277,22 @@ h1{
 
 .contact{
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr .8fr;
   gap:16px;
   align-items:start;
   border:1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.05);
   border-radius: 26px;
   padding: 20px;
+}
+.contact--simple .contact__action{
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  border-radius: 22px;
+  padding: 16px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
 .contact h2{ margin:0 0 8px 0; }
 .contact__meta{
@@ -298,25 +311,7 @@ h1{
 .meta__k{ display:block; color: var(--muted); font-size: 12px; }
 .meta__v{ display:block; margin-top:4px; font-weight:600; }
 
-.form{
-  border:1px solid rgba(255,255,255,.10);
-  background: rgba(255,255,255,.04);
-  border-radius: 22px;
-  padding: 16px;
-}
-label{ display:block; margin-bottom: 12px; }
-label span{ display:block; color: var(--muted); font-size: 12px; margin-bottom: 6px; }
-input, textarea{
-  width:100%;
-  padding: 12px 12px;
-  border-radius: 16px;
-  border:1px solid rgba(255,255,255,.14);
-  background: rgba(11,15,24,.6);
-  color: var(--text);
-  outline:none;
-}
-input:focus, textarea:focus{ border-color: rgba(0,214,255,.45); box-shadow: 0 0 0 4px rgba(0,214,255,.10); }
-.fineprint{ margin: 10px 0 0 0; color: var(--muted); font-size: 12px; }
+.fineprint{ margin: 0; color: var(--muted); font-size: 12px; }
 
 .footer{
   padding: 24px 0;

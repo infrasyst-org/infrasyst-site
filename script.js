@@ -26,30 +26,21 @@
     });
   }
 
-  // Contact form: open mail client with prefilled email
-  const form = document.getElementById("contactForm");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const fd = new FormData(form);
-
-      const name = String(fd.get("name") || "").trim();
-      const email = String(fd.get("email") || "").trim();
-      const message = String(fd.get("message") || "").trim();
-
-      const subject = encodeURIComponent(`Project inquiry — ${name || "New lead"}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}\n\n— Sent from infrasyst.com`
-      );
-
-      // Change this to your preferred inbox
-      const to = "hello@infrasyst.com";
-      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-    });
-  }
-
   // Timezone label (client side)
   const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const tzEl = document.getElementById("tz");
   if (tzEl && tz) tzEl.textContent = tz;
+
+  // Email button: opens mail client with a prefilled message
+  const emailBtn = document.getElementById("emailBtn");
+  if (emailBtn) {
+    emailBtn.addEventListener("click", () => {
+      const to = "info@infrasyst.com";
+      const subject = encodeURIComponent("Project inquiry — InfraSyst");
+      const body = encodeURIComponent(
+        "Hi InfraSyst,\n\nI’d like help with:\n- \n\nContext:\n- \n\nTimeline:\n- \n\nThanks,\n"
+      );
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    });
+  }
 })();
