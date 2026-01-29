@@ -308,6 +308,7 @@ h1{
 }
 .meta__k{ display:block; color: var(--muted); font-size: 12px; }
 .meta__v{ display:block; margin-top:4px; font-weight:600; }
+.meta__v--light{ color: var(--muted); font-weight:500; }
 
 .fineprint{ margin: 0; color: var(--muted); font-size: 12px; }
 
