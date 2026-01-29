@@ -1,9 +1,246 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Infrasyst</title></head>
-  <body>
-    <h1>Infrasyst</h1>
-    <p>Backend-first software and cloud engineering.</p>
-    <p>Contact: you@example.com</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Infrasyst — AWS Cloud, Automation, and Backend API builder." />
+  <title>Infrasyst | AWS Cloud • Automation • Backend APIs</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <span class="brand__mark" aria-hidden="true">◆</span>
+        <span class="brand__name">Infrasyst</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#work">How I work</a>
+        <a href="#contact" class="btn btn--small">Contact</a>
+      </nav>
+
+      <button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
+      <a href="#services">Services</a>
+      <a href="#work">How I work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="pill">AWS Cloud • Automation • Backend API builder</p>
+
+          <h1>
+            Build reliable cloud systems that
+            <span class="grad">ship fast</span> and
+            <span class="grad">stay stable</span>.
+          </h1>
+
+          <p class="sub">
+            I help teams and founders design, automate, and run AWS infrastructure and backend APIs.
+            Clean architecture, security-minded defaults, and boring reliability (the best kind).
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#contact">Let’s talk</a>
+            <a class="btn btn--ghost" href="#services">See services</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <span class="trust__kpi">AWS</span>
+              <span class="trust__label">Cloud engineering</span>
+            </div>
+            <div class="trust__item">
+              <span class="trust__kpi">IaC</span>
+              <span class="trust__label">Automation-first</span>
+            </div>
+            <div class="trust__item">
+              <span class="trust__kpi">APIs</span>
+              <span class="trust__label">Backend builder</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-hidden="true">
+          <div class="card">
+            <div class="card__top">
+              <div class="dot dot--r"></div>
+              <div class="dot dot--y"></div>
+              <div class="dot dot--g"></div>
+              <span class="card__title">deploy.log</span>
+            </div>
+
+            <pre class="terminal" id="terminal">
+$ aws sts get-caller-identity
+Account: ************
+Region:  us-east-1
+
+$ terraform apply
+Plan: 12 to add, 0 to change, 0 to destroy
+
+$ curl -s https://api.example.com/health
+{"status":"ok","ts":"UTC"}
+            </pre>
+
+            <div class="card__footer">
+              <span class="badge">Secure defaults</span>
+              <span class="badge">Observability</span>
+              <span class="badge">Cost-aware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>Pick a focused engagement or bundle them into a project.</p>
+        </div>
+
+        <div class="cards">
+          <article class="sCard">
+            <h3>AWS Cloud Engineering</h3>
+            <p>Design and harden AWS infrastructure with clear guardrails: networking, IAM, compute, storage, and CI/CD.</p>
+            <ul>
+              <li>VPC + IAM architecture</li>
+              <li>Lambda / ECS / EKS support</li>
+              <li>Security baselines</li>
+            </ul>
+          </article>
+
+          <article class="sCard">
+            <h3>Automation</h3>
+            <p>Eliminate manual ops with Infrastructure as Code (IaC) and repeatable runbooks.</p>
+            <ul>
+              <li>Terraform / CloudFormation</li>
+              <li>GitHub Actions pipelines</li>
+              <li>Deployments & rollbacks</li>
+            </ul>
+          </article>
+
+          <article class="sCard">
+            <h3>Backend APIs</h3>
+            <p>Build clean, maintainable APIs with authentication, rate limiting, and monitoring baked in.</p>
+            <ul>
+              <li>API Gateway + Lambda</li>
+              <li>DynamoDB / RDS patterns</li>
+              <li>Tracing + structured logs</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="work">
+      <div class="container">
+        <div class="section__head">
+          <h2>How I work</h2>
+          <p>Simple process. No mystery sauce, just systems.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step__n">01</span>
+            <h3>Quick technical intake</h3>
+            <p>What you have, what’s broken, what matters (speed, cost, security, scale).</p>
+          </div>
+          <div class="step">
+            <span class="step__n">02</span>
+            <h3>Plan + small wins</h3>
+            <p>Roadmap + immediate fixes that reduce risk and friction.</p>
+          </div>
+          <div class="step">
+            <span class="step__n">03</span>
+            <h3>Build + automate</h3>
+            <p>Ship improvements with IaC, tests, and repeatable deploys.</p>
+          </div>
+          <div class="step">
+            <span class="step__n">04</span>
+            <h3>Operate calmly</h3>
+            <p>Monitoring, alerting, docs, and handoff so you’re not hostage to tribal knowledge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div>
+            <h2>Contact</h2>
+            <p class="sub">
+              Send a short note with what you’re building and what you need. I’ll reply with next steps.
+            </p>
+
+            <div class="contact__meta">
+              <div class="meta">
+                <span class="meta__k">Email</span>
+                <a class="meta__v" href="mailto:hello@infrasyst.com">hello@infrasyst.com</a>
+              </div>
+              <div class="meta">
+                <span class="meta__k">Timezone</span>
+                <span class="meta__v" id="tz">AST (Puerto Rico)</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm">
+            <label>
+              <span>Name</span>
+              <input required name="name" type="text" placeholder="Your name" />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input required name="email" type="email" placeholder="you@company.com" />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea required name="message" rows="5" placeholder="What are you trying to build or fix?"></textarea>
+            </label>
+
+            <button class="btn" type="submit">Prepare email</button>
+            <p class="fineprint">This form opens your email client (no backend needed).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Infrasyst</span>
+      <span class="footer__sep">•</span>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
