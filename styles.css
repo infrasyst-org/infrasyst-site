@@ -330,19 +330,19 @@ h1{
 .bg{ position:absolute; inset:0; pointer-events:none; }
 .blob{
   position:absolute;
-  filter: blur(40px);
-  opacity:.45;
+  filter: blur(50px);
+  opacity:.35;
   border-radius: 999px;
 }
 .blob--1{
-  width: 480px; height: 480px;
-  left: -120px; top: -180px;
-  background: radial-gradient(circle at 30% 30%, rgba(123,97,255,.85), transparent 60%);
+  width: 450px; height: 450px;
+  left: -160px; top: -160px;
+  background: radial-gradient(circle at 30% 30%, rgba(123,97,255,.75), transparent 65%);
 }
 .blob--2{
-  width: 480px; height: 480px;
-  right: -120px; top: 60px;
-  background: radial-gradient(circle at 30% 30%, rgba(0,214,255,.75), transparent 60%);
+  width: 450px; height: 450px;
+  right: -180px; top: 80px;
+  background: radial-gradient(circle at 30% 30%, rgba(0,214,255,.65), transparent 65%);
 }
 .grid{
   position:absolute; inset:0;
