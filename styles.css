@@ -284,6 +284,9 @@ h1{
   border-radius: 26px;
   padding: 20px;
 }
+.contact--simple{
+  grid-template-columns: 1fr;
+}
 .contact--simple .contact__action{
   border:1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.04);
@@ -295,7 +298,7 @@ h1{
 }
 .contact h2{ margin:0 0 8px 0; }
 .contact__meta{
-  margin-top: 16px;
+  margin-top: 12px;
   display:flex;
   gap:14px;
   flex-wrap:wrap;
@@ -304,8 +307,8 @@ h1{
   border:1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.05);
   border-radius: 18px;
-  padding: 10px 12px;
-  min-width: 200px;
+  padding: 10px 14px;
+  min-width: 0;
 }
 .meta__k{ display:block; color: var(--muted); font-size: 12px; }
 .meta__v{ display:block; margin-top:4px; font-weight:600; }
