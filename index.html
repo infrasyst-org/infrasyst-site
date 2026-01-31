@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="InfraSyst — AWS Cloud, Automation, and Backend API builder." />
-  <title>InfraSyst | AWS Cloud • Automation • Backend APIs</title>
+  <meta name="description" content="InfraSyst — A cloud technology company." />
+  <title>InfraSyst | Cloud Technology Company</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,8 +31,6 @@
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#work">How I work</a>
         <a href="#contact" class="btn btn--small">Contact</a>
       </nav>
 
@@ -42,8 +40,6 @@
     </div>
 
     <div class="mobileNav" id="mobileNav" hidden>
-      <a href="#services">Services</a>
-      <a href="#work">How I work</a>
       <a href="#contact">Contact</a>
     </div>
   </header>
@@ -52,71 +48,8 @@
     <section class="hero">
       <div class="container hero__inner">
         <div class="hero__copy">
-          <p class="pill">AWS Cloud • Automation • Backend API builder</p>
-
-          <h1>
-            Build reliable cloud systems that
-            <span class="grad">ship fast</span> and
-            <span class="grad">stay stable</span>.
-          </h1>
-
-          <p class="sub">
-            I help teams and founders design, automate, and run AWS infrastructure and backend APIs.
-            Security-minded defaults, clear documentation, and boring reliability (the best kind).
-          </p>
-
-          <p class="note">
-            Automation-first delivery — including IaC where appropriate.
-          </p>
-
-          <div class="cta">
-            <a class="btn" href="#contact">Email me</a>
-            <a class="btn btn--ghost" href="#services">See services</a>
-          </div>
-
-          <div class="trust">
-            <div class="trust__item">
-              <span class="trust__kpi">AWS</span>
-              <span class="trust__label">Cloud engineering</span>
-            </div>
-            <div class="trust__item">
-              <span class="trust__kpi">CI/CD</span>
-              <span class="trust__label">Automation & pipelines</span>
-            </div>
-            <div class="trust__item">
-              <span class="trust__kpi">APIs</span>
-              <span class="trust__label">Backend builder</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero__card" aria-hidden="true">
-          <div class="card">
-            <div class="card__top">
-              <div class="dot dot--r"></div>
-              <div class="dot dot--y"></div>
-              <div class="dot dot--g"></div>
-              <span class="card__title">deploy.log</span>
-            </div>
-
-            <pre class="terminal" id="terminal">
-$ aws sts get-caller-identity
-Account: ************
-Region:  us-east-1
-
-$ pipeline run
-Build: ✅  Test: ✅  Deploy: ✅
-
-$ curl -s https://api.example.com/health
-{"status":"ok","ts":"UTC"}
-            </pre>
-
-            <div class="card__footer">
-              <span class="badge">Secure defaults</span>
-              <span class="badge">Observability</span>
-              <span class="badge">Cost-aware</span>
-            </div>
-          </div>
+          <h1>A cloud technology company</h1>
+          <p class="hero__tagline">Building reliable cloud software and platforms.</p>
         </div>
       </div>
 
@@ -127,78 +60,8 @@ $ curl -s https://api.example.com/health
       </div>
     </section>
 
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section__head">
-          <h2>Services</h2>
-          <p>Focused engagements that reduce risk and speed up delivery.</p>
-        </div>
 
-        <div class="cards">
-          <article class="sCard">
-            <h3>AWS Cloud Engineering</h3>
-            <p>Design and improve AWS infrastructure with practical security and clean architecture.</p>
-            <ul>
-              <li>VPC + IAM architecture</li>
-              <li>Lambda / ECS / EKS support</li>
-              <li>Security baselines & reviews</li>
-            </ul>
-          </article>
-
-          <article class="sCard">
-            <h3>Automation</h3>
-            <p>Reduce manual ops with pipelines and repeatable deployments. IaC when it makes sense.</p>
-            <ul>
-              <li>CI/CD pipelines (GitHub Actions, etc.)</li>
-              <li>Deployments & rollbacks</li>
-              <li>IaC as needed (CloudFormation/Terraform)</li>
-            </ul>
-          </article>
-
-          <article class="sCard">
-            <h3>Backend APIs</h3>
-            <p>Build maintainable APIs with auth, rate limiting, and monitoring baked in.</p>
-            <ul>
-              <li>API Gateway + Lambda</li>
-              <li>DynamoDB / RDS patterns</li>
-              <li>Tracing + structured logs</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="work">
-      <div class="container">
-        <div class="section__head">
-          <h2>How I work</h2>
-          <p>Simple process. No mystery sauce — just systems.</p>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <span class="step__n">01</span>
-            <h3>Quick technical intake</h3>
-            <p>What you have, what’s broken, what matters (speed, cost, security, scale).</p>
-          </div>
-          <div class="step">
-            <span class="step__n">02</span>
-            <h3>Plan + small wins</h3>
-            <p>Roadmap + immediate fixes that reduce risk and friction.</p>
-          </div>
-          <div class="step">
-            <span class="step__n">03</span>
-            <h3>Build + automate</h3>
-            <p>Ship improvements with pipelines, testing, and repeatable deploys.</p>
-          </div>
-          <div class="step">
-            <span class="step__n">04</span>
-            <h3>Operate calmly</h3>
-            <p>Monitoring, alerting, docs, and handoff so you’re not hostage to tribal knowledge.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="section__divider" aria-hidden="true"></div>
 
     <section class="section" id="contact">
       <div class="container">
@@ -221,10 +84,7 @@ $ curl -s https://api.example.com/health
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span id="year"></span> by InfraSyst Technology Solutions LLC. All rights reserved.</span>
-      <span class="footer__sep">•</span>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+      <span>© <span id="year"></span> InfraSyst Technology Solutions LLC. All rights reserved.</span>
     </div>
   </footer>
 
