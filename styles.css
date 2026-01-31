@@ -397,7 +397,19 @@ h1{
   .cards{ grid-template-columns: 1fr; }
   .steps{ grid-template-columns: 1fr; }
   .contact{ grid-template-columns: 1fr; }
-  .nav{ display:none; }
-  .menu{ display:block; }
+  .nav{ display:flex; }
+  .menu{ display:none; }
   .trust{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px){
+  .contact{
+    padding: 16px;
+  }
+  .sub--nowrap{
+    white-space: normal;
+  }
+  .contact__note{
+    max-width: 100%;
+  }
 }
